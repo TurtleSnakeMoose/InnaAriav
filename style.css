@@ -24,6 +24,42 @@
 }
 
 
+@font-face {
+	font-family: innasFont;
+	src: url(assets/font/OEMeodedPashutPro-Bold.otf);
+  }
 
+body {
+	font-family: innasFont;
+	background: #ddfcff;
+	direction: rtl;
+	text-align: start;
+}
 
+.jumbotron {
+	padding: unset;
+	background: white;
+	border-bottom: 5px ridge #72cbe6;
+	box-shadow: 1px 1px 18px 9px #537478;
+}
 
+.div_logo{
+	text-align: start;
+}
+
+.div_logo img {
+	height: 32vh;
+}
+
+.form-group{
+	max-width: 380px;
+}
+
+.div_fistLastName .form-group{
+	max-width: 205px;
+}
+
+.div_btn{
+	text-align: center;
+	margin: 15px 0;
+}

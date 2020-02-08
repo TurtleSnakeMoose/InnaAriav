@@ -21,11 +21,56 @@
 	</head>
 
 	<body>
-		<img src="assets/logo/inna_logo.jpg">
-		<h1>InnaAriav's Coaching contact page.</h1>
-		<p>
-			Under construction kapara.
-		</p>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<div class="div_logo">
+					<img src="assets/logo/inna_logo.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="div_contactMe">
+				<form>
+
+					<div class='div_fistLastName row'>
+						<div class="form-group col-6">
+							<label for="cust_firstName">שם פרטי</label>
+							<input data-field-name='שם פרטי' type="text" class="form-control" id="cust_firstName" onblur="ia.validate.validateField($(this))" required>
+							<div class="valid-feedback"></div><div class="invalid-feedback"></div>
+						</div>
+						<div class="form-group col-6">
+							<label for="cust_lastName">שם משפחה</label>
+							<input data-field-name='שם משפחה' type="text" class="form-control" id="cust_lastName" onblur="ia.validate.validateField($(this))" required>
+							<div class="valid-feedback"></div><div class="invalid-feedback"></div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="cust_phone">טלפון</label>
+						<input data-field-name='טלפון' type="text" class="form-control" id="cust_phone" onblur="ia.validate.validateField($(this))" required>
+						<div class="valid-feedback"></div><div class="invalid-feedback"></div>
+					</div>
+
+					<div class="form-group">
+						<label for="cust_email">אימייל</label>
+						<input data-field-name='אימייל' type="text" class="form-control" id="cust_email" onblur="ia.validate.validateField($(this))" required>
+						<div class="valid-feedback"></div><div class="invalid-feedback"></div>
+					</div>
+
+					<div class="form-group">
+						<label for="cust_remarks">הערות נוספות</label>
+						<textarea type="text" data-field-name='הערות נוספות' class="form-control" id="cust_remarks" rows="5" onblur="ia.validate.validateField($(this))" required></textarea>
+						<div class="valid-feedback"></div><div class="invalid-feedback"></div>
+					</div>
 		
+					<div class="div_btn">
+						<input type="button" class="btn btn-primary" onclick="ia.site.submitForm($(this))" value="שליחה">
+					</div>
+
+				</form>
+			</div>
+		</div>
 	</body>
+
 </html>
