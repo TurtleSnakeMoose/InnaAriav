@@ -3,12 +3,12 @@
 }
 
 /* For mobile phones: */
-[class*="col-"] {
+/* [class*="col-"] {
 	width: 100%;
-}
+} */
   
-@media only screen and (min-width: 768px) {
 /* For desktop: */
+/* @media only screen and (min-width: 768px) {
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -21,7 +21,7 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-}
+} */
 
 
 @font-face {
@@ -32,8 +32,52 @@
 body {
 	font-family: innasFont;
 	background: #a4c7cc;
-	direction: rtl;
 	text-align: start;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~*/
+
+.jumbotron {
+	padding: unset;
+	background: white;
+	/* border-bottom: 5px ridge #72cbe6; */
+	box-shadow: -1px 11px 18px 9px #ffffff;
+}
+
+.navbar-nav{
+	direction: rtl;
+}
+
+.div_logo{
+	text-align: start;
+}
+
+.div_logo img {
+	height: 32vh;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ContactMe Portion ~~~*/
+
+form {
+	direction: rtl;
+}
+
+form .row{
+	padding: 0 15px;
+}
+
+.div_fistLastName .form-group {
+	width:49%;
+}
+
+.div_fistLastName .form-group:first-child {
+	margin-left:2%
+}
+
+.div_btn{
+	text-align: center;
+	justify-content: center;
+	margin: 15px 0;
 }
 
 input[type="button"]{
@@ -48,30 +92,34 @@ input[type="button"]{
 	margin-bottom: .2rem;
 }
 
-.jumbotron {
-	padding: unset;
-	background: white;
-	border-bottom: 5px ridge #72cbe6;
-	box-shadow: 1px 1px 18px 9px #537478;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ AboutMe Portion ~~~*/
+
+.div_aboutMe{
+	box-shadow: 0px 20px 20px 0px #a4c7cc
 }
 
-.div_logo{
-	text-align: start;
+.aboutMe-txtContent{
+	direction: rtl;
 }
 
-.div_logo img {
-	height: 32vh;
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Quotes Portion ~~~*/
+
+.div_quotes{
+	direction: rtl;
+	background-color: white;
 }
 
-.form-group{
-	max-width: 380px;
+#carousel-quotes{
+	height: 35vh;
 }
 
-.div_fistLastName .form-group{
-	max-width: 205px;
+.carousel-indicators li{
+	background-color: #a4c7cc;
 }
 
-.div_btn{
-	text-align: center;
-	margin: 15px 0;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Quotes Portion ~~~*/
+
+.links_content{
+	direction: rtl;
 }
