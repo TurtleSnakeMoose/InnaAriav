@@ -1,0 +1,301 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+
+	.row {
+		margin-bottom: 5px;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~*/
+
+	#div_header{
+		height: 60vh;
+		background-image: url('../assets/img/head.jpg');
+		background-size: cover;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT-ME ~~~*/
+
+	#div_aboutMe {
+		height: 32vh;
+		background-image: url('../assets/img/backg_about.png');
+		background-size: cover;
+		display: inline-flex;
+		direction: rtl;
+		padding: 0;
+	}
+
+	#round-portrait{
+		width:30%;
+		text-align: center;
+		align-self: center;
+	}
+
+
+	#aboutMe{
+		width:70%;
+		padding: 10px;
+		overflow-y: auto;
+		height: 80%;
+		align-self: center;
+		direction: ltr;
+	}
+
+	#aboutMe::-webkit-scrollbar-track
+	{
+		background-color: #dcdddf;
+		height: 80%;
+	}
+	#aboutMe::-webkit-scrollbar
+	{
+		width: 10px;
+		background-color: #dcdddf;
+	}
+	#aboutMe::-webkit-scrollbar-thumb
+	{
+		background-color: #dcdddf;
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, #a2c6cb));
+	}
+
+	#aboutMe > #txtContent_aboutMe{
+		padding:10px;
+		direction: rtl;
+		text-align: right;
+		letter-spacing: 0.1rem;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SAID-ABOUT-ME ~~~*/
+
+	#div_saidAboutMe{
+		height: 55vh;
+		padding: 10px;
+	}
+
+	#recommend_head {
+		background: #A2C6CB;
+		color: #6699A1;
+		height: 19%;
+		font-size: 3.5em;
+		text-align: center;
+	}
+	
+	#recommend_tiles {
+		height: 61%;
+		max-height: 61%;
+		display: grid;
+		grid-auto-flow: column;
+		grid-column-gap: 10px;
+		direction: rtl;
+	}
+
+	#recommend_tiles > .recommend_tile {
+		background: #EEEEEF;
+		margin: 10px 0;
+		text-align: right;
+		position: relative;
+	}
+	
+	#recommend_tiles > .recommend_tile > .quote_mark {
+		font-size: 9em;
+		bottom: 131px;
+		right: 27px;
+		color: #97B8BE;
+		position: absolute;
+	}
+
+	#recommend_tiles > .recommend_tile > .paragraph_container {
+		position: absolute;
+		bottom: 0;
+		height: 90%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+
+	#recommend_tiles > .recommend_tile > .paragraph_container > p {
+		margin:0;
+		padding: 0 20px;
+	}
+	
+	#recommend_foot {
+		height: 20%;
+		display: flex;
+    	justify-content: center;
+	}
+
+	#recommend_foot > img {
+		object-fit: contain;
+	}
+
+
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ STEPS ~~~*/
+
+	#div_steps{
+		height: 20vh;
+		padding: 0 10px;
+		margin-bottom: 20px;
+	}
+
+	#steps_head {
+		background: #3E9FA4;
+		color: white;
+		height: 55%;
+		font-size: 3.5em;
+		text-align: center;
+		direction: rtl;
+	}
+	
+	#steps_tiles {
+		height: 45%;
+		display: grid;
+		grid-auto-flow: column;
+		direction: rtl;
+		grid-auto-columns: 1fr;
+	}
+
+	#steps_tiles > .step_tile {
+		background: #EEEEEF;
+		text-align: right;
+		display: flex;
+		padding: 0 10%;
+	}
+	
+	#steps_tiles > .step_tile > .step_num {
+		color: white;
+		font-size: 3em;
+	}
+
+	#steps_tiles > .step_tile > .step_textContainer {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+
+	#steps_tiles > .step_tile > .step_textContainer > p {
+		margin:0;
+		padding: 0 20px;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIGN-UP ~~~*/
+
+	#div_signUp{
+		height: 20vh;
+		padding: 0 10px;
+		position: relative;
+		margin-bottom: 15px;
+	}
+
+	#lecture_info{
+		position: absolute;
+		right: 10px;
+		width: 52%;
+		height: 70%;
+		background-image: url('../assets/logo/signup_lecture_bg.png');
+		background-size: contain;
+		top: 15px;
+		text-align: right;
+		direction: rtl;
+		padding: 36px 100px 0 0;
+	}
+
+	#lecture_info label{
+		display: contents;
+	}
+	
+	#lecture_link{
+		position: absolute;
+		right: 31px;
+		width: 84%;
+		height: 86%;
+		background: #EEEEEF;
+		top: 0;
+		font-size: 4em;
+		line-height: 135px;
+		padding-left: 84px;
+	}
+
+	#lecture_link > span{
+		cursor: pointer;
+		position: relative;
+    	z-index: 1;
+	}
+
+
+	#hand_container {
+		background-image: url('../assets/logo/dot.png');
+		position: absolute;
+		width: 46%;
+		left: 0;
+		top: 0;
+    	height: 100%;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT-ME ~~~*/
+
+	#div_contactMe{
+		height: 25vh;
+		padding: 0 10px;
+		background-color: #EEEEEF;
+		position: relative;
+	}
+
+	#div_contactMe > #contactMe_head{
+		direction: rtl;
+		height: 40%;
+		text-align: right;
+		font-size: 4em;
+		line-height: 81px;
+		color: white;
+	}
+	
+	#div_contactMe > #contactMe_content{
+		height: 60%;
+		direction: rtl;
+		display: flex;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form{
+		width: 90%;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form  #div_fullName  {
+		width: 59.5%;
+		margin-left: 1%;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form  #div_phone {
+		width: 39.5%;;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form input{
+		height: 26px;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form .form-control {
+		border: 0;
+    	border-radius: 0;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form .row {
+		margin: 0 0 10px 0;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form textarea{
+		resize: none;
+	}
+	
+	#div_contactMe > #contactMe_content > #contactMe_buttonContainer{
+		width: 10%;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_buttonContainer > img{
+		cursor: pointer;
+		float: right;
+		padding: 20px 20px;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LINKS ~~~*/
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~*/
+	
+}

@@ -12,7 +12,11 @@
 	  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" integrity="sha256-7stu7f6AB+1rx5IqD8I+XuIcK4gSnpeGeSjqsODU+Rk=" crossorigin="anonymous" />
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <link href="style/style.css" rel="stylesheet">
+	  <link href="style/main.css" rel="stylesheet">
+	  <link href="style/xs-devices.css" rel="stylesheet">
+	  <link href="style/small-devices.css" rel="stylesheet">
+	  <link href="style/medium-devices.css" rel="stylesheet">
+	  <link href="style/large-devices.css" rel="stylesheet">
 	  
 	  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	  <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -24,166 +28,193 @@
 	</head>
 	
 	<body>
-<!------------------------------------------------------------------------------------------------------{ HEADER }---------------->			
-<div class="jumbotron jumbotron-fluid">
-	<div class="container-fluid">
-		<div class="div_logo row justify-content-md-center">
-			<img src="assets/logo/inna_logo.jpg">
-		</div>
-		<div class="row justify-content-center">
-			<nav class="navbar navbar-expand">
-				<div class="navbar-nav">
-					<a href="#" class="nav-item nav-link" data-scroll-to="div_aboutMe" onclick="ip.site.scrollToElement(this)">מי אני</a>
-					<a href="#" class="nav-item nav-link" data-scroll-to="div_quotes" onclick="ip.site.scrollToElement(this)">מה נשים חושבות</a>
-					<a href="#" class="nav-item nav-link" data-scroll-to="div_links" onclick="ip.site.scrollToElement(this)">מה נשים לוחצות</a>
-					<a href="#" class="nav-item nav-link" data-scroll-to="div_signUp" onclick="ip.site.scrollToElement(this)">איך נשים עושות</a>
-					<a href="#" class="nav-item nav-link" data-scroll-to="div_contactMe" onclick="ip.site.scrollToElement(this)">מה נשים שולחות</a>
-				</div>
-			</nav>
-		</div>
-	</div>
-</div>
-<!---------------------------------------------------------------------------------------------------------------------------------->			
-
 		<div class="container-fluid">
+<!------------------------------------------------------------------------------------------------------{ HEADER }---------------->			
+			<div class="row justify-content-md-center">
+				<div id="div_header" class="col-md-7">
+					
+				</div>
+			</div>
 <!------------------------------------------------------------------------------------------------------{ ABOUT-ME }---------------->
-			<div class="div_aboutMe row justify-content-md-center">
-				<div class="col-md-7">
-					<div class="aboutMe-txtContent">
-						<h3>היוש!</h3>
-						<p>
-							אני אינה פארי, נשואה לאנדריי ואמא לאביגיל (2.5) ודניאל סול (1).	בעלת תואר ראשון בחינוך, סוציולוגיה ואנתרופולוגיה מהאוניברסיטה העברית ותואר שני בייעוץ ופיתוח ארגוני מהמכללה למנהל.
-						</p>
-						<p>
-							אני מאמנת אישית ומנחה קבוצות- מתמחה באימון הורים, ילדים ובני נוער. מנחה קבוצות העצמה, סדנאות, קורסים והרצאות בשיטת החינוך המונטסורי.
-						</p>
-						<p>
-							האימונים נערכים בקליניקה שלי בקריית גת ובתל אביב. או בתהליכי אימון וירטואליים- באמצעות שיחת טלפון או וידאו.
-						</p>
-						<p>
-							אני מאוהבת בלמידה וכל הזמן מעשירה ומעמיקה את הידע והניסיון שלי.	לומדת במוסדות אקדמיים- קורסים, סדנאות וקוראת בלי סוף ספרות מקצועית.
-						</p>
-						<p>
-							במסגרת הרחבת לימודי האימון שלי, סיימתי את קורס הכשרת המאמנות בגישת 'אמא מאמנת'. כיום, אני חונכת במחזור הנוכחי של קורס האימון, כמו גם בתכניות האונליין- אמא מאמנת וקורס מונטסורי.
-						</p>
-						<p>
-							אני מנהלת את קהילת הנשים וההורים בקריית גת, וכן מנחה סדנאות בארגונים שונים, ביניהם: מרכז מהותי- מהות החיים, מקבוצת אריסון.
-						</p>
-						<p>
-							אני נמצאת בתחום החינוך מאז שאני זוכרת את עצמי. תמיד אמרתי שנולדתי 'אמא', עד שהפכתי לאמא באמת והבנתי כמה זה מורכב להיות בצמיחה אישית ומקצועית ובו זמנית להיות אישה ואמא. לבחור בצמיחה על פני הישרדות.
-						</p>
-						<p>
-							השילוב בין שלושת העולמות: עולם האימון המנטלי, שיטת החינוך המונטסורי והפסיכולוגיה החיובית- הוא השילוב המושלם בעיניי.	זה השילוב שנכנס אלינו הביתה הרבה לפני שהבנות נולדו.	אנחנו ממש חיים את כל השלושה ביומיום שלנו. מתאמנים ומדייקים כל הזמן.
-						</p>
-						<p>
-							אני מאמינה בהורות פרקטית- הורותכלס!- שרואה את הילד ומציבה אותו במרכז.
-						</p>
+			<div class="row justify-content-md-center">
+				<div id="div_aboutMe" class="col-md-7">
+					<div id="round-portrait">	
+						<img src="./assets/img/inna_pic.png"/>
+					</div>
+					<div id="aboutMe">
+						<div id="txtContent_aboutMe">
+							<p>
+								אני אינה פארי, נשואה לאנדריי ואמא לאביגיל (2.5) ודניאל סול (1).	בעלת תואר ראשון בחינוך, סוציולוגיה ואנתרופולוגיה מהאוניברסיטה העברית ותואר שני בייעוץ ופיתוח ארגוני מהמכללה למנהל.
+							</p>
+							<p>
+								אני מאמנת אישית ומנחה קבוצות- מתמחה באימון הורים, ילדים ובני נוער. מנחה קבוצות העצמה, סדנאות, קורסים והרצאות בשיטת החינוך המונטסורי.
+								האימונים נערכים בקליניקה שלי בקריית גת ובתל אביב. או בתהליכי אימון וירטואליים- באמצעות שיחת טלפון או וידאו.
+								אני מאוהבת בלמידה וכל הזמן מעשירה ומעמיקה את הידע והניסיון שלי.	לומדת במוסדות אקדמיים- קורסים, סדנאות וקוראת בלי סוף ספרות מקצועית.
+							</p>
+							<p>
+							</p>
+							<p>
+							</p>
+							<p>
+								במסגרת הרחבת לימודי האימון שלי, סיימתי את קורס הכשרת המאמנות בגישת 'אמא מאמנת'. כיום, אני חונכת במחזור הנוכחי של קורס האימון, כמו גם בתכניות האונליין- אמא מאמנת וקורס מונטסורי.
+							</p>
+							<p>
+								אני מנהלת את קהילת הנשים וההורים בקריית גת, וכן מנחה סדנאות בארגונים שונים, ביניהם: מרכז מהותי- מהות החיים, מקבוצת אריסון.
+							</p>
+							<p>
+								אני נמצאת בתחום החינוך מאז שאני זוכרת את עצמי. תמיד אמרתי שנולדתי 'אמא', עד שהפכתי לאמא באמת והבנתי כמה זה מורכב להיות בצמיחה אישית ומקצועית ובו זמנית להיות אישה ואמא. לבחור בצמיחה על פני הישרדות.
+							</p>
+							<p>
+								השילוב בין שלושת העולמות: עולם האימון המנטלי, שיטת החינוך המונטסורי והפסיכולוגיה החיובית- הוא השילוב המושלם בעיניי.	זה השילוב שנכנס אלינו הביתה הרבה לפני שהבנות נולדו.	אנחנו ממש חיים את כל השלושה ביומיום שלנו. מתאמנים ומדייקים כל הזמן.
+							</p>
+							<p>
+								אני מאמינה בהורות פרקטית- הורותכלס!- שרואה את הילד ומציבה אותו במרכז.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------{ SAID-ABOUT-ME }----------->	
-			<div class="div_quotes row justify-content-md-center">
-				<div class="col-md-7">
-					<h3> מתאמנות מספרות על התהליך האימוני </h3>
-					<div id="carousel-quotes" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-quotes" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-quotes" data-slide-to="1"></li>
-							<li data-target="#carousel-quotes" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<div>
-									<p>
-										אינה היא מאמנת לחיים, כזו שעוזרת לך להציב לעצמך מטרות, לשנות דפוסי מחשבה ולחיות את החיים שהיית רוצה באמת. עברתי אימון בעבר, ועברתי גם לא מעט טיפולים פסיכולוגיים. אבל כזה תהליך, עוד לא היה לי. תהליך שגורם לי לגדול בכזאת עוצמה וכזאת מהירות.
-									</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div>
-									<p>
-										האישה הזאת, גורמת לי להתמודד עם הפחדים הכי גדולים שלי, עם המכאובים הכי נוראיים שלי, וכמה שהיא קשה איתי (ותאמינו לי שהיא קשה), ההיכרות איתה, והתהליך שאני עוברת, זה אחד הדברים הכי טובים שקרו לי בחיים. היא נלחמת עלי, ומאתגרת אותי, היא מלמדת אותי ונותנת לי דוגמה. היא עוזרת לי לבנות ולגלות את עצמי, כפי שהייתי רוצה באמת.
-									</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div>
-									<p>
-										אינה היקרה, את הרבה מעבר למנטורית או מאמנת לחיים. את שמש, ואת תקווה. תודה על תהליך משמעותי, תודה על הדרך שאת עוברת איתי, שאת עוזרת לי להגשים חלומות. 
-									</p>
-								</div>
+			<div class="row justify-content-md-center">
+				<div id="div_saidAboutMe" class="col-md-7">
+					<div id="recommend_head">
+						<span>מתאמנות מספרות על התהליך האימוני<span>
+					</div>
+					<div id="recommend_tiles">
+						<div class="recommend_tile">
+							<div class="quote_mark">"</div>
+							<div class="paragraph_container">
+								<p>
+									אינה היא מאמנת לחיים, כזו שעוזרת לך להציב לעצמך מטרות, לשנות דפוסי מחשבה ולחיות את החיים שהיית רוצה באמת. עברתי אימון בעבר, ועברתי גם לא מעט טיפולים פסיכולוגיים. אבל כזה תהליך, עוד לא היה לי. תהליך שגורם לי לגדול בכזאת עוצמה וכזאת מהירות.
+								</p>
 							</div>
 						</div>
-						<a class="carousel-control-prev" href="#carousel-quotes" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carousel-quotes" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>		
+						<div class="recommend_tile">
+							<div class="quote_mark">"</div>
+							<div class="paragraph_container">
+								<p>
+									האישה הזאת, גורמת לי להתמודד עם הפחדים הכי גדולים שלי, עם המכאובים הכי נוראיים שלי, וכמה שהיא קשה איתי (ותאמינו לי שהיא קשה), ההיכרות איתה, והתהליך שאני עוברת, זה אחד הדברים הכי טובים שקרו לי בחיים. היא נלחמת עלי, ומאתגרת אותי, היא מלמדת אותי ונותנת לי דוגמה. היא עוזרת לי לבנות ולגלות את עצמי, כפי שהייתי רוצה באמת.
+								</p>
+							</div>
+						</div>
+						<div class="recommend_tile">
+							<div class="quote_mark">"</div>
+							<div class="paragraph_container">
+								<p>
+									אינה היקרה, את הרבה מעבר למנטורית או מאמנת לחיים. את שמש, ואת תקווה. תודה על תהליך משמעותי, תודה על הדרך שאת עוברת איתי, שאת עוזרת לי להגשים חלומות. 
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="recommend_foot">
+						<img src="./assets/logo/hands_recommand.png"/>
+					</div>
 				</div>
 			</div>
+<!------------------------------------------------------------------------------------------------------{ STEPS }------------------->	
+			<div class="row justify-content-md-center">
+				<div id="div_steps" class="col-md-7">
+					<div id="steps_head">
+						<span>איך עושים את זה בתכלס?<span>
+					</div>
+					<div id="steps_tiles">
+						<div class="step_tile">
+							<div class="step_num">1.</div>
+							<div class="step_textContainer">
+								<p>
+									פגישת מיקוד לפתרון דילמה או אתגר מסויים
+								</p>
+							</div>
+						</div>
+						<div class="step_tile">
+							<div class="step_num">2.</div>
+							<div class="step_textContainer">
+								<p>
+									תהליך אימוני מלא להשגת מטרה אישית, הורית, זוגית או מקצועית
+								</p>
+							</div>
+						</div>
+						<div class="step_tile">
+							<div class="step_num">3.</div>
+							<div class="step_textContainer">
+								<p>
+									סדנת העצמה, הרצאה או קורס
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
 <!------------------------------------------------------------------------------------------------------{ SIGN-UP }------------------->	
-			<div class="div_signUp row justify-content-md-center">
-				<div class="col-md-7">
-				</div>
-			</div>
-<!------------------------------------------------------------------------------------------------------{ LINKS }------------------->	
-			<div class="div_links row justify-content-md-center">
-				<div class="links_content">
-					<div class="col-md-7">
+			<div class="row justify-content-md-center">
+				<div id="div_signUp" class="col-md-7">
+					<div id="lecture_link">
+						<span onclick="ip.site.navigateToLectureSignup()">לחצו כאן</span>
+					</div>
+					<div id="lecture_info">
 						<span>
-							כלים אימוניים ומידע על שיטת החינוך המונטסורי אפשר למצוא במדיה החברתית בלינקים הבאים:
+							<strong>
+								להרשמה להרצאת האונליין הקרובה
+							</strong>
+							<label>
+								בתאריך 23/04
+							</label>
 						</span><br>
-						<a href="https://www.facebook.com/groups/797501100689560/">קבוצת הפייסבוק "הורותכלס"</a><br>
-						<a href="https://www.facebook.com/groups/622036365234179/">קבוצת הפייסבוק "מונטסורי בבית- אביזרים ותרגילים"</a><br>
-						<a href="https://www.instagram.com/innapeairie/">הפרופיל שלי באינסטגרם</a><br>
-						<a href="https://www.facebook.com/innacoaching">הפרופיל שלי בפייסבוק</a><br>
-						<a href="https://www.facebook.com/innapeairie/">העמוד העסקי בפייסבוק</a><br>
+						<span>
+							הורות לעצמאות וביטחון עצמי | לפי שיטת החינוך המונטיסורי
+						</span>
+					</div>
+					<div id="hand_container">
+						<img src="./assets/logo/hand_pointing.png"/>
 					</div>
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------{ CONTACT-ME }-------------->			
-			<div id="div_contactMe" class="div_contactMe row justify-content-md-center">
-				<form class="col-md-3 justify-content-center">
-					<div class='div_fistLastName row'>
-						<div class="form-group">
-							<label for="cust_firstName">שם פרטי</label>
-							<input data-field-name='שם פרטי' type="text" class="form-control" id="cust_firstName" onblur="ip.validate.validateField($(this))" required>
-							<div class="valid-feedback"></div><div class="invalid-feedback"></div>
+			<div class="row justify-content-md-center">
+				<div id="div_contactMe" class="col-md-7">
+					<div id="contactMe_head">
+						<span>תמיד אפשר לדבר איתי<span>
+					</div>
+					<div id="contactMe_content">
+						<div id="contactMe_form">
+							<form>
+								<div class="row"> 
+									<div id="div_fullName">
+										<input placeholder="שם מלא" data-field-name='שם מלא' type="text" class="form-control" id="cust_fullName" onblur="ip.validate.validateField($(this))" required>
+									</div>
+				
+									<div id="div_phone">
+										<input placeholder="טלפון" data-field-name='טלפון' type="text" class="form-control" id="cust_phone" onblur="ip.validate.validateField($(this))" required>
+									</div>
+								</div>
+			
+								<div class="row">
+									<input placeholder="מייל" data-field-name='מייל' type="text" class="form-control" id="cust_email" onblur="ip.validate.validateField($(this))" required>
+								</div>
+			
+								<div class="row">
+									<textarea placeholder="טקסט קצר" type="text" data-field-name='טקסט קצר' class="form-control" id="cust_remarks" rows="2" onblur="ip.validate.validateField($(this))" required></textarea>
+								</div>
+							</form>
 						</div>
-						<div class="form-group">
-							<label for="cust_lastName">שם משפחה</label>
-							<input data-field-name='שם משפחה' type="text" class="form-control" id="cust_lastName" onblur="ip.validate.validateField($(this))" required>
-							<div class="valid-feedback"></div><div class="invalid-feedback"></div>
+						<div id="contactMe_buttonContainer">
+							<img onclick="ip.site.submitForm($(this))" src="./assets/logo/arrow.png"/>
 						</div>
 					</div>
+				</div>
 
-					<div class="form-group row">
-						<label for="cust_phone">טלפון</label>
-						<input data-field-name='טלפון' type="text" class="form-control" id="cust_phone" onblur="ip.validate.validateField($(this))" required>
-						<div class="valid-feedback"></div><div class="invalid-feedback"></div>
-					</div>
+			</div>			
+<!------------------------------------------------------------------------------------------------------{ LINKS }------------------->	
+			<div class="row justify-content-md-center">
+				<div id="div_links" class="col-md-7" style="background-color: gold; height: 20vh;">
 
-					<div class="form-group row">
-						<label for="cust_email">אימייל</label>
-						<input data-field-name='אימייל' type="text" class="form-control" id="cust_email" onblur="ip.validate.validateField($(this))" required>
-						<div class="valid-feedback"></div><div class="invalid-feedback"></div>
-					</div>
+				</div>
+			</div>
+<!------------------------------------------------------------------------------------------------------{ FOOTER }------------------->	
+			<div class="row justify-content-md-center">
+				<div id="div_footer" class="col-md-7" style="background-color: indigo; height: 20vh;">
 
-					<div class="form-group row">
-						<label for="cust_remarks">עוד משהו שאני צריכה לדעת?</label>
-						<textarea type="text" data-field-name='הערות נוספות' class="form-control" id="cust_remarks" rows="5" onblur="ip.validate.validateField($(this))" required></textarea>
-						<div class="valid-feedback"></div><div class="invalid-feedback"></div>
-					</div>
-		
-					<div class="div_btn row">
-						<input type="button" class="btn btn-primary" onclick="ip.site.submitForm($(this))" value="שליחה">
-					</div>
-
-				</form>
+				</div>
 			</div>
 <!-------------------------------------------------------------------------------------------------------------------------------------------->			
 		</div>
