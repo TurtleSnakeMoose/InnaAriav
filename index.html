@@ -177,20 +177,20 @@
 							<form>
 								<div class="row"> 
 									<div id="div_fullName">
-										<input placeholder="שם מלא" data-field-name='שם מלא' type="text" class="form-control" id="cust_fullName" onblur="ip.validate.validateField($(this))" required>
+										<input id="cust_fullName" placeholder="שם מלא" data-field-name='fName' type="text" min-length="4" max-length="30" class="form-control"  onblur="ip.validate.validateField($(this))" required>
 									</div>
 				
 									<div id="div_phone">
-										<input placeholder="טלפון" data-field-name='טלפון' type="text" class="form-control" id="cust_phone" onblur="ip.validate.validateField($(this))" required>
+										<input id="cust_phone" placeholder="טלפון" data-field-name='phone' type="number" min-length="9" max-length="12" class="form-control"  onblur="ip.validate.validateField($(this))" required>
 									</div>
 								</div>
 			
 								<div class="row">
-									<input placeholder="מייל" data-field-name='מייל' type="text" class="form-control" id="cust_email" onblur="ip.validate.validateField($(this))" required>
+									<input id="cust_email" placeholder="מייל" data-field-name='email' type="text" class="form-control" onblur="ip.validate.validateField($(this))" required>
 								</div>
 			
 								<div class="row">
-									<textarea placeholder="טקסט קצר" type="text" data-field-name='טקסט קצר' class="form-control" id="cust_remarks" rows="2" onblur="ip.validate.validateField($(this))" required></textarea>
+									<textarea id="cust_remarks" placeholder="טקסט קצר" type="text" min-length="1" max-length="250" data-field-name='טקסט קצר' class="form-control" rows="2" onblur="ip.validate.validateField($(this))" required></textarea>
 								</div>
 							</form>
 						</div>
@@ -203,14 +203,37 @@
 			</div>			
 <!------------------------------------------------------------------------------------------------------{ LINKS }------------------->	
 			<div class="row justify-content-md-center">
-				<div id="div_links" class="section" style="background-color: gold; height: 20vh;">
-
+				<div id="div_links" class="section">
+					<div id="div_links_head">
+						<span>
+							כלים אימוניים ומידע על שיטת החינוך המונטיסורי אפשר למצוא במדיה החברתית בלינקים הבאים:
+						</span>
+					</div>
+					<div id="links_container">
+						<div id="link_1" class="link" onclick="ip.site.navigateToLink('www.instagram.com/innapeairie/')">
+							<label>הפרופיל שלי באינסטגרם >></label>
+						</div>
+						<div id="link_2" class="link" onclick="ip.site.navigateToLink('www.facebook.com/groups/797501100689560/')">
+							<label>קבוצת הפייסבוק "הורותכלס" >></label>
+						</div>
+						<div id="link_3" class="link" onclick="ip.site.navigateToLink('www.facebook.com/groups/622036365234179/')">
+							<label>קבוצת הפייסבוק "מונטיסורי בבית - אביזרים ותרגילים" >></label>
+						</div>
+					</div>
+					<div id="links_img_container">
+						<img src="./assets/logo/hand_resting.png"/>
+					</div>
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------{ FOOTER }------------------->	
 			<div class="row justify-content-md-center">
-				<div id="div_footer" class="section" style="background-color: indigo; height: 20vh;">
-
+				<div id="div_footer" class="section">
+					<div id="footer_img">
+						<!--background image via css-->
+					</div>
+					<div id="footer_credit">
+						<label>עיצוב: נסטיה פייביש | תכנות: <a href="mailto: misharoskin@gmail.com">מיכאל רוסקין</a> | &copy; כל הזכויות שמורות לאינה פארי</label>
+					</div>
 				</div>
 			</div>
 <!-------------------------------------------------------------------------------------------------------------------------------------------->			

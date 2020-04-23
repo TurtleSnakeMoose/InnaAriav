@@ -3,7 +3,7 @@ ip.util = ip.util || {};
 
 
 ip.util.buildSubject = function (form) {
-    var customerName = `${$('#cust_firstName').val()} ${$('#cust_lastName').val()}`;
+    var customerName = $('#cust_fullName').val();
     var subject = `${customerName} השאירה פרטים`
 
     return subject;
@@ -31,13 +31,11 @@ ip.util.buildBody = function (form) {
 ip.util.getFieldsWithValues = function (form){
     let fieldsToReturn = [],
          fields = form.find('input[type!="button"], textarea');
-
+debugger;
     $.each(fields, function(i, field){
-        let fieldType = $(field).attr('type'),
-            formGroup = $(field).closest('.form-group'),
-            fieldName = formGroup.find('label:first').text();
+        let fieldValue = $(field).val(),
+            fieldName = $(field).attr('placeholder');
             
-        let fieldValue = $(field).val();
         
         fieldsToReturn.push({Name: fieldName, Value: fieldValue});
     });
@@ -77,4 +75,6 @@ ip.util.sendEmail = function (subject,body){
 ip.util.nullifyForm = function (){
     location.reload();
 }
+
+
 

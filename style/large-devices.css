@@ -235,6 +235,7 @@
 		padding: 0 10px;
 		background-color: #EEEEEF;
 		position: relative;
+		margin-bottom: 20px;
 	}
 
 	#div_contactMe > #contactMe_head{
@@ -294,6 +295,90 @@
 
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LINKS ~~~*/
 
+	#div_links{
+		height: 230px;
+		background-color: white;
+	}
+
+	#div_links > #div_links_head {
+		height: 20%;
+		background: #A2C6CB;
+		direction: rtl;
+		text-align: right;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px 10px;
+	}
+	
+	#div_links > #links_container {
+		height: 32%;
+		display: inline-flex;
+		direction: rtl;
+		width: 100%;
+		padding: 19px;
+		justify-content: center;
+	}
+
+	#div_links > #links_container .link {
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: relative;
+		background-position-x: right;
+		background-color: #EEEEEF;
+	}
+
+	#div_links > #links_container .link label {
+		position: absolute;
+		right: 47px;
+		font-size: 16px;
+		font-weight: bold;
+		top: 5px;
+		pointer-events: none;
+	}
+
+	#div_links > #links_container > #link_1 {
+		cursor: pointer;
+		background-image: url('../assets/logo/insta_link.png');
+		width: 23%;
+	}
+
+	#div_links > #links_container > #link_2 {
+		cursor: pointer;
+		background-image: url('../assets/logo/facebook_link_short.png');
+		margin: 0 20px;
+		width: 25%;
+	}
+
+	#div_links > #links_container > #link_3 {
+		cursor: pointer;
+		background-image: url('../assets/logo/facebook_link_long.png');
+		width: 42%;
+	}
+
+	#div_links > #links_img_container {
+		width: 48%;
+	}
+
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~*/
+
+	#div_footer {
+		height: 720px;
+	}
+
+
+	#div_footer > #footer_img{
+		height: 96.5%;
+		background-image: url('../assets/img/botum_pic.jpg');
+		background-size: cover;
+	}
+
+	#div_footer > #footer_credit{
+		background: #A2C6CB;
+		height: 3.5%;
+		text-align: center;
+		font-weight: bold;
+	}
+
+
 	
 }
