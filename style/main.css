@@ -3,10 +3,10 @@
 }
 
 @font-face {
-	font-family: innasFont;
-	src: url('../assets/font/OEMeodedPashutPro-Bold.otf');
+	font-family: alef;
+	src: url('../assets/font/Alef-Regular.ttf');
   }
 
 body {
-	font-family: innasFont;
+	font-family: alef;
 }

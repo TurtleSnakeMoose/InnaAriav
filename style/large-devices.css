@@ -5,10 +5,14 @@
 		margin-bottom: 5px;
 	}
 
+	.section{
+		width: 1110px;
+	}
+
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~*/
 
 	#div_header{
-		height: 60vh;
+		height: 560px;
 		background-image: url('../assets/img/head.jpg');
 		background-size: cover;
 	}
@@ -16,8 +20,8 @@
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT-ME ~~~*/
 
 	#div_aboutMe {
-		height: 32vh;
-		background-image: url('../assets/img/backg_about.png');
+		height: 300px;
+		background-image: url('../assets/img/beige_textured_bg.png');
 		background-size: cover;
 		display: inline-flex;
 		direction: rtl;
@@ -60,26 +64,24 @@
 		padding:10px;
 		direction: rtl;
 		text-align: right;
-		letter-spacing: 0.1rem;
+		font-size: 19px;
 	}
 
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SAID-ABOUT-ME ~~~*/
 
 	#div_saidAboutMe{
-		height: 55vh;
+		height: 515px;
 		padding: 10px;
 	}
 
 	#recommend_head {
-		background: #A2C6CB;
-		color: #6699A1;
-		height: 19%;
-		font-size: 3.5em;
-		text-align: center;
+		height: 20%;
+		background-image: url('../assets/logo/said_about_me_header.png');
+		background-size: cover;
 	}
 	
 	#recommend_tiles {
-		height: 61%;
+		height: 60%;
 		max-height: 61%;
 		display: grid;
 		grid-auto-flow: column;
@@ -88,19 +90,15 @@
 	}
 
 	#recommend_tiles > .recommend_tile {
-		background: #EEEEEF;
 		margin: 10px 0;
 		text-align: right;
 		position: relative;
+		background-image: url('../assets/img/quote_bg.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: #ededee;
 	}
 	
-	#recommend_tiles > .recommend_tile > .quote_mark {
-		font-size: 9em;
-		bottom: 131px;
-		right: 27px;
-		color: #97B8BE;
-		position: absolute;
-	}
 
 	#recommend_tiles > .recommend_tile > .paragraph_container {
 		position: absolute;
@@ -117,7 +115,7 @@
 	}
 	
 	#recommend_foot {
-		height: 20%;
+		height: 19%;
 		display: flex;
     	justify-content: center;
 	}
@@ -131,18 +129,15 @@
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ STEPS ~~~*/
 
 	#div_steps{
-		height: 20vh;
+		height: 190px;
 		padding: 0 10px;
 		margin-bottom: 20px;
 	}
 
 	#steps_head {
-		background: #3E9FA4;
-		color: white;
-		height: 55%;
-		font-size: 3.5em;
-		text-align: center;
-		direction: rtl;
+		height: 50%;
+		background-image: url('../assets/logo/howdoyoudoit_header.png');
+		background-size: contain;
 	}
 	
 	#steps_tiles {
@@ -163,6 +158,7 @@
 	#steps_tiles > .step_tile > .step_num {
 		color: white;
 		font-size: 3em;
+		font-weight: bold;
 	}
 
 	#steps_tiles > .step_tile > .step_textContainer {
@@ -179,7 +175,7 @@
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIGN-UP ~~~*/
 
 	#div_signUp{
-		height: 20vh;
+		height: 190px;
 		padding: 0 10px;
 		position: relative;
 		margin-bottom: 15px;
@@ -190,7 +186,7 @@
 		right: 10px;
 		width: 52%;
 		height: 70%;
-		background-image: url('../assets/logo/signup_lecture_bg.png');
+		background-image: url('../assets/img/pink_textured_bg.png');
 		background-size: contain;
 		top: 15px;
 		text-align: right;
@@ -214,15 +210,17 @@
 		padding-left: 84px;
 	}
 
-	#lecture_link > span{
+	#lecture_link > img{
 		cursor: pointer;
 		position: relative;
-    	z-index: 1;
+		z-index: 1;
+		top: 2px;
+		left: 7px;
 	}
 
 
 	#hand_container {
-		background-image: url('../assets/logo/dot.png');
+		background-image: url('../assets/img/dotted_bg.png');
 		position: absolute;
 		width: 46%;
 		left: 0;
@@ -233,19 +231,19 @@
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT-ME ~~~*/
 
 	#div_contactMe{
-		height: 25vh;
+		height: 235px;
 		padding: 0 10px;
 		background-color: #EEEEEF;
 		position: relative;
 	}
 
 	#div_contactMe > #contactMe_head{
-		direction: rtl;
 		height: 40%;
-		text-align: right;
-		font-size: 4em;
-		line-height: 81px;
-		color: white;
+		background-image: url(../assets/logo/talk_to_me_header.png);
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
+		background-position-y: center;
 	}
 	
 	#div_contactMe > #contactMe_content{
