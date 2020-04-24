@@ -1,6 +1,10 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px){
 
+	.large-device-hide {
+		display: none;
+	}
+
 	.row {
 		margin-bottom: 5px;
 	}
@@ -8,6 +12,7 @@
 	.section{
 		width: 1110px;
 	}
+
 
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~*/
 
@@ -231,7 +236,7 @@
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT-ME ~~~*/
 
 	#div_contactMe{
-		height: 235px;
+		height: 245px;
 		padding: 0 10px;
 		background-color: #EEEEEF;
 		position: relative;

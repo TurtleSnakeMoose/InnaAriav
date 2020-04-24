@@ -1,20 +1,400 @@
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px){
+/* Small devices (phones, portrait tablets ) */
+@media only screen and (max-width: 992px){
+
+	.section{
+		width: 100%;
+	}
+
+	.small-device-hide {
+		display: none;
+	}
+
+	 /* reorder divs for smaller devices */
+	#page_container { display: flex; flex-direction: column; }
+	#header_container { order: 1 ; }
+	#aboutmMe_container { order: 2 ; }
+	#saidAboutMe_container { order: 5 ; }
+	#steps_container { order: 4 ; }
+	#signup_container { order: 3 ; }
+	#contactMe_container { order: 6 ; }
+	#links_container { order: 1 ; }
+	#footer_container { order: 1 ; }
 
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~*/
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT-ME ~~~*/
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SAID-ABOUT-ME ~~~*/
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ STEPS ~~~*/
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIGN-UP ~~~*/
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT-ME ~~~*/
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LINKS ~~~*/
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~*/
-	
+
+	#div_header{
+		height: 70vw;
+		background-image: url('../assets/img/head_mobile.png');
+		background-size: cover;
+		position: relative;
+		margin-bottom: 10px;
 	}
+
+	#div_header > #header_inna_logo{
+		height: 35%;
+		width: 43%;
+		background-image: url('../assets/logo/ip_logo.png');
+		background-size: cover;
+		right: 6%;
+		top: 16%;
+		position: absolute;
+	}
+
+
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT-ME ~~~*/
+
+	#div_aboutMe {
+		height: 470px;
+    	max-height: 565px;
+		background-image: url('../assets/img/beige_textured_bg_mobile.png');
+		background-size: cover;
+		display: block;
+		direction: rtl;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+
+	#round-portrait{
+		height: 45%;
+		text-align: center;
+		align-self: center;
+	}
+
+	#round-portrait > img{
+		height: 100%;
+	}
+
+	#aboutMe{
+		height: 50%;
+		overflow-y: auto;
+		align-self: center;
+		direction: ltr;
+		margin-right: 25px;
+		margin-top: 10px;
+		padding: 0 15px;
+	}
+
+	#aboutMe::-webkit-scrollbar-track
+	{
+		background-color: #dcdddf;
+		height: 80%;
+	}
+	#aboutMe::-webkit-scrollbar
+	{
+		width: 10px;
+		background-color: #dcdddf;
+	}
+	#aboutMe::-webkit-scrollbar-thumb
+	{
+		background-color: #dcdddf;
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, #a2c6cb));
+	}
+
+	#aboutMe > #txtContent_aboutMe{
+		direction: rtl;
+		text-align: right;
+		font-size: 3vw;
+
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SAID-ABOUT-ME ~~~*/
+
+	#div_saidAboutMe{
+		height: 170vw;
+		margin-bottom: 3vw;
+	}
+
+	#recommend_head {
+		height: 8%;
+		background-image: url('../assets/logo/said_about_me_header_mobile.png');
+		background-size: contain;
+    	background-position-x: center;
+    	background-position-y: center;
+	}
+	
+	#recommend_tiles {
+		height: 77%;
+		display: grid;
+		grid-auto-flow: row;
+		grid-row-gap: 1vw;
+		direction: rtl;
+		margin-top: 2vw;
+	}
+
+	#recommend_tiles > .recommend_tile {
+		text-align: right;
+		position: relative;
+		background-image: url('../assets/img/quote_bg_mobile.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: #ededee;
+	}
+	
+
+	#recommend_tiles > .recommend_tile > .paragraph_container {
+		position: absolute;
+		bottom: 0;
+		height: 90%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+
+	#recommend_tiles > .recommend_tile > .paragraph_container > p {
+		margin: 0;
+		padding: 0px 12vw;
+		line-height: 1;
+		font-size: 3.5vw;
+		margin-top: 6vw;
+	}
+	
+	#recommend_foot {
+		height: 15%;
+		display: flex;
+    	justify-content: center;
+	}
+
+	#recommend_foot > img {
+		object-fit: contain;
+	}
+
+
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ STEPS ~~~*/
+
+	#div_steps{
+		height: 55vw;
+		margin-bottom: 12vw
+	}
+
+	#steps_head {
+		height: 20%;
+		background-image: url('../assets/logo/howdoyoudoit_header.png');
+		background-size: cover;
+    	background-position-x: center;
+	}
+	
+	#steps_tiles {
+		height: 80%;
+		display: grid;
+		grid-auto-flow: row;
+		direction: rtl;
+		row-gap: 2vw;
+		margin: 2vw;
+	}
+
+	#steps_tiles > .step_tile {
+		background: #A2C6CB;
+		text-align: right;
+		display: flex;
+	}
+	
+	#steps_tiles > .step_tile > .step_num {
+		color: white;
+		font-size: 10vw;
+		font-weight: bold;
+		width:15%;
+		text-align: left;
+	}
+	
+	#steps_tiles > .step_tile > .step_textContainer {
+		font-size: 4vw;
+		width:85%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		padding: 0 5vw;
+	}
+
+	#steps_tiles > .step_tile > .step_textContainer > p {
+		margin: 0;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIGN-UP ~~~*/
+
+	#div_signUp{
+		height: 37vw;
+		background-image: url('../assets/img/lecture_info_bg_mobile.png');
+		background-size: contain;
+		position: relative;
+		margin-bottom: 25px;
+	}
+
+	#lecture_info{
+		position: absolute;
+		direction: rtl;
+		width: 60%;
+		text-align: right;
+		line-height: 4vw;
+		right: 5%;
+		top: 6%;
+		font-size: 4vw;
+		font-size: 3vw;
+    	padding: 0 20px;
+	}
+
+	#lecture_info label{
+	}
+	
+	#lecture_link{
+		position: absolute;
+		bottom: 7%;
+		left: 20%;
+	}
+
+	#lecture_link > img{
+		cursor: pointer;
+		width: 30vw;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT-ME ~~~*/
+
+	#div_contactMe{
+		height: 55vw;
+		padding: 0 10px;
+		background-color: #EEEEEF;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	#div_contactMe > #contactMe_head{
+		height: 25%;
+		margin: 0 6vw;
+		background-image: url(../assets/logo/talk_to_me_header_mobile.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: center;
+	}
+	
+	#div_contactMe > #contactMe_content{
+		height: 75%;
+		direction: rtl;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form{
+		padding: 0 7vw;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form input{
+		height: 5vw;
+		margin-bottom: 1vw;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form .form-control {
+		border: 0;
+    	border-radius: 0;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form .row {
+		flex-direction: column;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_form textarea{
+		resize: none;
+		height: 10vw;
+	}
+	
+	#div_contactMe > #contactMe_content > #contactMe_buttonContainer{
+		margin: 2.5vw 4.5vw;
+	}
+
+	#div_contactMe > #contactMe_content > #contactMe_buttonContainer > img{
+		cursor: pointer;
+		height: 5vw;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LINKS ~~~*/
+
+	#div_links{
+		height: 230px;
+		background-color: white;
+		display: none;
+	}
+
+	#div_links > #div_links_head {
+		height: 20%;
+		background: #A2C6CB;
+		direction: rtl;
+		text-align: right;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px 10px;
+	}
+	
+	#div_links > #links_container {
+		height: 34%;
+		display: inline-flex;
+		direction: rtl;
+		width: 100%;
+		padding: 19px;
+		justify-content: center;
+	}
+
+	#div_links > #links_container .link {
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: relative;
+		background-position-x: right;
+	}
+
+	#div_links > #links_container .link label {
+		position: absolute;
+		right: 47px;
+		font-size: 16px;
+		font-weight: bold;
+		top: 6px;
+		pointer-events: none;
+	}
+
+	#div_links > #links_container > #link_1 {
+		cursor: pointer;
+		background-image: url('../assets/logo/insta_link.png');
+		width: 23%;
+	}
+
+	#div_links > #links_container > #link_2 {
+		cursor: pointer;
+		background-image: url('../assets/logo/facebook_link_short.png');
+		margin: 0 20px;
+		width: 25%;
+	}
+
+	#div_links > #links_container > #link_3 {
+		cursor: pointer;
+		background-image: url('../assets/logo/facebook_link_long.png');
+		width: 42%;
+	}
+
+	#div_links > #links_img_container {
+		width: 48%;
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~*/
+
+	#div_footer {
+		height: 720px;
+		display: none;
+	}
+
+
+	#div_footer > #footer_img{
+		height: 96.5%;
+		background-image: url('../assets/img/botum_pic.jpg');
+		background-size: cover;
+	}
+
+	#div_footer > #footer_credit{
+		background: #A2C6CB;
+		height: 3.5%;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	#div_footer  a{
+		color: unset;
+	}
+
+
+}

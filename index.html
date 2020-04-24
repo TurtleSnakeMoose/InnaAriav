@@ -13,10 +13,8 @@
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" integrity="sha256-7stu7f6AB+1rx5IqD8I+XuIcK4gSnpeGeSjqsODU+Rk=" crossorigin="anonymous" />
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <link href="style/main.css" rel="stylesheet">
-	  <link href="style/xs-devices.css" rel="stylesheet">
 	  <link href="style/small-devices.css" rel="stylesheet">
-	  <link href="style/medium-devices.css" rel="stylesheet">
-	  <link href="style/large-devices.css" rel="stylesheet">
+	  <link href="style/large-devices.css" rel="stylesheet"> 
 	  
 	  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	  <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -28,15 +26,18 @@
 	</head>
 	
 	<body>
-		<div class="container-fluid">
+		<div id="page_container" class="container-fluid">
 <!------------------------------------------------------------------------------------------------------{ HEADER }---------------->			
-			<div class="row justify-content-md-center">
+			<div id="header_container" class="row justify-content-md-center">
 				<div id="div_header" class="section">
-					
+					<!--background image via css-->
+					<div id="header_inna_logo" class='large-device-hide'>
+						<!--background image via css-->
+					</div>
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------{ ABOUT-ME }---------------->
-			<div class="row justify-content-md-center">
+			<div id="aboutmMe_container" class="row justify-content-md-center">
 				<div id="div_aboutMe" class="section">
 					<div id="round-portrait">	
 						<img src="./assets/img/inna_pic.png"/>
@@ -75,7 +76,7 @@
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------{ SAID-ABOUT-ME }----------->	
-			<div class="row justify-content-md-center">
+			<div id="saidAboutMe_container" class="row justify-content-md-center">
 				<div id="div_saidAboutMe" class="section">
 					<div id="recommend_head">
 						<!--background image via css-->
@@ -109,7 +110,7 @@
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------{ STEPS }------------------->	
-			<div class="row justify-content-md-center">
+			<div id="steps_container" class="row justify-content-md-center">
 				<div id="div_steps" class="section">
 					<div id="steps_head">
 						<!--background image via css-->
@@ -143,7 +144,7 @@
 				</div>
 			</div>			
 <!------------------------------------------------------------------------------------------------------{ SIGN-UP }------------------->	
-			<div class="row justify-content-md-center">
+			<div id="signup_container" class="row justify-content-md-center">
 				<div id="div_signUp" class="section">
 					<div id="lecture_link">
 						<img onclick="ip.site.navigateToLectureSignup()" src="assets/logo/press_here_label.png"/>
@@ -161,13 +162,13 @@
 							הורות לעצמאות וביטחון עצמי | לפי שיטת החינוך המונטיסורי
 						</span>
 					</div>
-					<div id="hand_container">
+					<div id="hand_container" class='small-device-hide'>
 						<img src="./assets/logo/hand_pointing.png"/>
 					</div>
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------{ CONTACT-ME }-------------->			
-			<div class="row justify-content-md-center">
+			<div id="contactMe_container" class="row justify-content-md-center">
 				<div id="div_contactMe" class="section">
 					<div id="contactMe_head">
 						<!--background image via css-->
@@ -190,19 +191,20 @@
 								</div>
 			
 								<div class="row">
-									<textarea id="cust_remarks" placeholder="טקסט קצר" type="text" min-length="1" max-length="250" data-field-name='טקסט קצר' class="form-control" rows="2" onblur="ip.validate.validateField($(this))" required></textarea>
+									<textarea id="cust_remarks" placeholder="טקסט קצר" type="text" min-length="1" max-length="250" data-field-name='טקסט קצר' class="form-control" onblur="ip.validate.validateField($(this))" required></textarea>
 								</div>
 							</form>
 						</div>
 						<div id="contactMe_buttonContainer">
-							<img onclick="ip.site.submitForm($(this))" src="./assets/logo/arrows.png"/>
+							<img onclick="ip.site.submitForm($(this))" src="./assets/logo/arrows.png" class="small-device-hide"/>
+							<img onclick="ip.site.submitForm($(this))" src="./assets/logo/arrows_mobile.png" class="large-device-hide"/>
 						</div>
 					</div>
 				</div>
 
 			</div>			
 <!------------------------------------------------------------------------------------------------------{ LINKS }------------------->	
-			<div class="row justify-content-md-center">
+			<div id="links_container" class="row justify-content-md-center">
 				<div id="div_links" class="section">
 					<div id="div_links_head">
 						<span>
@@ -226,7 +228,7 @@
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------{ FOOTER }------------------->	
-			<div class="row justify-content-md-center">
+			<div id="footer_container" class="row justify-content-md-center">
 				<div id="div_footer" class="section">
 					<div id="footer_img">
 						<!--background image via css-->
