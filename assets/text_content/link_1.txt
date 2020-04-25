@@ -1,0 +1,5 @@
+﻿<label data-address="
+								http://www.instagram.com/innapeairie/
+">
+	הפרופיל שלי באינסטגרם >>
+</label>

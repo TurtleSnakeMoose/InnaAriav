@@ -3,21 +3,18 @@ ip.site = ip.site || {};
 
 $(function (){
 
-	// TODO: load all pissible textual context from js func
-	// // this load text from a js funciton, allowing the client to easily modify texts around the page.
-	// ip.site.loadTextualContent = function () { 
-	// 	ip.content.loadContent_aboutMe();
-	// 	ip.content.loadContent_saidAboutMe();
-	// 	ip.content.loadContent_steps();
-	// 	ip.content.loadContent_lectureInfo();
-	// }	
-
+	// load textual content and urls. done externally from txt file to allow the client to change content without bothering me.
+	ip.content.loadTextualContent();
+	
 	ip.site.navigateToLectureSignup = function () {
-		window.open('https://meshulam.co.il/purchase?b=7188235352cc1f3521ee8cc891842e37', '_blank')
+		$.get( '../assets/text_content/link_to_lecture.txt', function( address ) {
+			window.open(address, '_blank')
+		});
 	}
 
-	ip.site.navigateToLink = function (dest) {
-		window.open(`https://${dest}` , '_blank')
+	ip.site.navigateToLink = function (link) {
+		let address = $(link).find('label').data('address');
+		window.open( address , '_blank');
 	}
 
 	// prepares and sends the contact info to e-mail by smtp.js
@@ -36,5 +33,4 @@ $(function (){
 
 		ip.util.nullifyForm();
 	}
-	
 })
